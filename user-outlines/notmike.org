@@ -11,6 +11,7 @@
 #+html_head: <script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.js"></script>
 #+html_head: <script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
 #+html_head: <script type="text/" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+#+PROPERTY: header-args :tangle yes
 
 * setup
 
@@ -30,7 +31,7 @@ My favorite theme, available [[https://github.com/ccann/badger-theme][here]].
 
 ** default font
 #+begin_src emacs-lisp
-  (set-face-attribute 'default nil :family "CHANGEME" :height 145 :weight 'light)
+  (set-face-attribute 'default nil :family "Bitstream Vera Sans" :height 145 :weight 'light)
 #+end_src
 
 ** blend in the fringes
@@ -119,5 +120,5 @@ The following sections customize core Emacs settings.
 I have =CHANGEME= bound to open any available major-mode hydra.
 
 #+begin_src emacs-lisp
-  (global-set-key (kbd "CHANGEME") 'major-mode-hydra)
+  (global-set-key (kbd "C-c m") 'major-mode-hydra)
 #+end_src
